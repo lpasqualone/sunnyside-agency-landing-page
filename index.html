@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,54 +16,162 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+  <!-----Navigation / header----->
+  <div class="header">
+    <div class="container">
+       <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <button><a href="#">Contact</a></button>
+      </nav>
+      </div>
 
-  Transform your brand
+      <div class="header-main">
+        <h1>We Are Creatives</h1>
+        <div>
+        <img src="images/icon-arrow-down.svg">
+      </div>
+      </div>
+  </div>
+  </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+  <!-----About Sunnyside grid----->
 
-  Learn more
+  <section class="split-screen-about">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <div class="text-info">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <div class="learn-more">
+          <a href="#">Learn More</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-2">
+          <img src="images/desktop/image-transform.jpg">
+        </div>
+      </div>
 
-  Stand out to the right audience
+      <div class="row">
+        <div class="col-2">
+          <img src="images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="col-2">
+          <h2>Stand out to the right audience</h2>
+          <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <a href="#">Learn More</a>
+          
+        </div>
+      </div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      <div class="row">
+        <div class="col-2">
+          <img src="images/desktop/image-graphic-design.jpg">
+          <h3>Graphic Design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="col-2">
+          <img src="images/desktop/image-photography.jpg">
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </div>
 
-  Learn more
+  </section>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+  <!-----Client Testimonials----->
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  <section class="client-testimonials">
+    <div class="small-container">
+      <h3>Client Testimonials</h3>
+      <div class="row">
+        <div class="col-3">
+          <img src="images/image-emily.jpg">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p>Emily R.</p>
+          <p>Marketing Director</p>
+        </div>
 
-  Client testimonials
+        <div class="col-3">
+          <img src="images/image-thomas.jpg">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p>Thomas S.</p>
+          <p>Chief Operating Officer</p>
+        </div>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+        <div class="col-3">
+          <img src="images/image-jennie.jpg">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p>Jennie F.</p>
+          <p>Business Owner</p>
+        </div>
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+      </div>
+    </div>
+  </section>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
 
-  About
-  Services
-  Projects
-  Contact
+  <!-----'Footer' - milk orange cone sugar cubes----->
+
+  <section class="bottom-image-border">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="images/desktop/image-gallery-milkbottles.jpg">
+        </div>
+        <div class="col-4">
+          <img src="images/desktop/image-gallery-orange.jpg">
+        </div>
+        <div class="col-4">
+          <img src="images/desktop/image-gallery-cone.jpg">
+        </div>
+        <div class="col-4">
+          <img src="images/desktop/image-gallery-sugarcubes.jpg">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-----Footer----->
+
+  <footer>
+    <div class="brand-name">
+      <h2>sunnyside</h2>
+      <div class="misc-footer">
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-icons">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+    </div>
+
+  </footer>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">@lpasqualone</a>.
   </div>
 </body>
 </html>
