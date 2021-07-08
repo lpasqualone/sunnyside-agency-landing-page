@@ -6,6 +6,8 @@
 
 html, body{
     min-height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -100,7 +102,9 @@ button a{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    max-height: 600px;
     width: 100%;
+    padding: 0;
 }
 
 .col-2 .text-info{
@@ -123,7 +127,7 @@ button a{
     margin: 2rem 4rem;
     color: hsl(213, 9%, 39%);
 }
-
+/*
 .col-2 a{
     display: inline-block;
     font-family: 'Fraunces', serif;
@@ -132,4 +136,213 @@ button a{
     margin: 1rem 4rem;
     text-transform: uppercase;
     z-index: 1;
+}*/
+
+a.learn-more{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    margin: 1rem 4rem;
+    text-transform: uppercase;
+}
+
+a.learn-more::before{
+    content: "";
+    background:hsl(51, 100%, 49%);
+    height: 7px;
+    width: 138px;
+    position: absolute;
+    border-radius: 8px;
+    bottom: -.05em;
+    left: -5px;
+    z-index: -1;
+}
+
+a.learn-more-red{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    margin: 1rem 4rem;
+    text-transform: uppercase;
+}
+
+a.learn-more-red::before{
+    content: "";
+    background:hsl(7, 99%, 70%);
+    height: 7px;
+    width: 138px;
+    position: absolute;
+    border-radius: 8px;
+    bottom: -.05em;
+    left: -5px;
+    z-index: -1;
+}
+
+.item-description{
+    position: relative;
+    bottom: 14rem;
+}
+
+.col-2 .graphic-design{
+    color: hsl(167, 40%, 24%);
+    position: 
+}
+
+h2.graphic-design{
+    font-family: font-family: 'Fraunces', serif;;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+p.graphic-design{
+    max-width: 380px;
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+p.photography{
+    max-width: 400px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+h2.photography{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.col-2 .photography{
+    color:  hsl(198, 62%, 26%);
+}
+
+.client-testimonials{
+    padding-top: 5rem;
+    height: 675px;
+    width: 100%;
+    background-color: #fefbf7;
+}
+
+.client-testimonials h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    padding-bottom: 80px;
+    color: hsl(210, 4%, 67%);
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-3 img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.col-3 p{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    padding: 0 20px 90px;
+}
+
+p.client-name{
+    font-size: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(213, 9%, 39%);
+    padding-bottom: 5px;
+}
+
+p.client-title{
+    font-size: 16px;
+    color: hsl(210, 4%, 67%);
+}
+
+.bottom-image-border{
+    width: 100%;
+}
+
+.col-4 img{
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 360px;
+    object-fit: cover;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #90d4c4;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: hsl(168, 34%, 41%);
+}
+
+.misc-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.misc-footer a{
+    text-decoration: none;
+    color: hsl(168, 34%, 41%) !important;
+}
+
+.misc-footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    padding-bottom: 3.5rem;
+}
+
+.misc-footer ul li:last-child{
+    margin-right: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icons a{
+    color: hsl(168, 34%, 41%);
+    font-size: 28px;
+    margin: 0 15px;
+    margin-bottom: 100px;
 }
