@@ -374,7 +374,7 @@ footer h2{
     }
 }
 
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 430px) {
     .col-2 h2{
         font-size: 22px !important;
         margin: 0rem 4rem;
@@ -410,6 +410,7 @@ footer h2{
         color: #fff;
         display: inline-block;
         margin-top: -3px;
+        cursor:pointer;
     }
     nav ul{
         display: none;
