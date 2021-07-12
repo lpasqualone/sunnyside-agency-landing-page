@@ -48,16 +48,14 @@ Sunnyside is a full-service creative agency specialized in helping brands grow f
 
 ***Mobile**
 
-<table>
-  <tr>
-    <td><img src="Sunnyside-Screenshot-MobileMenu.png" width="400"/></td>
-    <td><img src="Sunnyside-Screenshot-Mobile.png" width="400"/></td>
-  </tr>
- </table>
+<p float="left">
+  <img src="Sunnyside-Screenshot-MobileMenu.png" width="400"/>
+  <img src="Sunnyside-Screenshot-Mobile.png" width="400"/>
+</p>
 
  
 
-### Links
+### **Links**
 
 - [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-RjNeWXbeb)
 - Author: [@lpasqualone](https://www.frontendmentor.io/profile/lpasqualone)
