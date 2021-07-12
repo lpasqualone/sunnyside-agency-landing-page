@@ -409,7 +409,7 @@ footer h2{
         font-size: 24px;
         color: #fff;
         display: inline-block;
-        margin-top: -5px;
+        margin-top: -3px;
     }
     nav ul{
         display: none;
@@ -461,7 +461,7 @@ footer h2{
         font-size: 40px;
     }
     .col-2 .text-info{
-        max-height: 270px;
+        max-height: 290px;
     }
     .col-2 h2{
         font-size: 22px !important;
@@ -469,7 +469,7 @@ footer h2{
     }
     .col-2 p{
         font-family: 'Barlow', sans-serif;
-        font-size: 10px !important;
+        font-size: 12px !important;
         margin: 0 4rem;
         color: hsl(213, 9%, 39%);
     }
@@ -479,12 +479,12 @@ footer h2{
     a.learn-more{
         display: inline-block;
         position: relative;
-        font-size: 10px !important;
+        font-size: 12px !important;
         margin: 1rem 4rem;
     }
     a.learn-more::before{
         height: 7px;
-        width: 80px !important;
+        width: 90px !important;
         position: absolute;
         bottom: -.15em;
         left: -3px;
@@ -492,16 +492,16 @@ footer h2{
     a.learn-more-red{
         display: inline-block;
         position: relative;
-        font-size: 10px !important;
+        font-size: 12px !important;
         margin: 1rem 4rem;
     }
     
     a.learn-more-red::before{
         height: 7px;
-        width: 80px !important;
+        width: 90px !important;
         position: absolute;
         bottom: -.18em;
-        left: -3px;
+        left: -10px;
     }
     .item-description{
         position: absolute;
@@ -640,5 +640,32 @@ footer h2{
         font-family: font-family: 'Fraunces', serif;;
         font-size: 20px;
         padding-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 1300px){
+       .col-2 h2{
+        font-size: 40px !important  ;
+        margin: 2rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 26px !important ;
+        margin: 2rem 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    .item-description{
+        position: absolute;
+        bottom: 3%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 28px !important ;
+    }
+    p.graphic-design{
+        max-width: 300px;
+        margin: 0.5rem auto;
+        line-height: 1.5;
+        font-size: 18px !important ;
     }
   }
