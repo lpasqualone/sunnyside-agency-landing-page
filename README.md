@@ -29,8 +29,6 @@ Sunnyside is a full-service creative agency specialized in helping brands grow f
 *JavaScript for creating responsive mobile menu*
 <br>
 
-_______
-
 ## **Summary**
 
 **What I know**
@@ -39,12 +37,8 @@ _______
 * JavaScript for interactive elements
 
 **Where I can grow**
-* CSS Grid - I feel confident with Flexbox and comfortable with Grid. Was able to quickly search Grid tactics, but would like to be more well versed off the top of my head.
-* 
-
-_______
-
-
+* CSS Grid - I feel confident with Flexbox and comfortable with Grid. Was able to quickly search and apply Grid tactics, but would like to be more well versed off the top of my head.
+* More practice working with responsive design. I have a good handle on the process, but would like to be more efficent with experience in time.
 
 ## **Screenshots**
 
