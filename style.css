@@ -105,6 +105,9 @@ button a{
     max-height: 600px;
     width: 100%;
     padding: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
 }
 
 .col-2 .text-info{
@@ -162,7 +165,7 @@ a.learn-more-red{
 
 a.learn-more-red::before{
     content: "";
-    background:hsl(7, 99%, 70%);
+    background:#ffdcd3;
     height: 7px;
     width: 138px;
     position: absolute;
@@ -173,13 +176,12 @@ a.learn-more-red::before{
 }
 
 .item-description{
-    position: relative;
-    bottom: 14rem;
+    position: absolute;
+    bottom: 10%;
 }
 
 .col-2 .graphic-design{
     color: hsl(167, 40%, 24%);
-    position: 
 }
 
 h2.graphic-design{
@@ -336,3 +338,286 @@ footer h2{
     margin: 0 15px;
     margin-bottom: 100px;
 }
+
+/* ------ meda queries ------ */
+
+
+/* mobile size */
+
+@media only screen and (max-width: 350px) {
+    .client-testimonials h3{
+        margin: 1rem 2rem;
+        font-size: 16px;
+    }
+    p.client-name{
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    
+    p.client-title{
+        font-size: 14px;
+    }
+
+    footer h2{
+        font-size: 20px;
+    }
+    .misc-footer ul li {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .col-2 h2{
+        font-size: 22px !important;
+        margin: 0rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px !important;
+        margin: 0 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    .item-description{
+        position: absolute;
+        bottom: 3%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 28px;
+    }
+    p.graphic-design{
+        max-width: 300px;
+        margin: 0.5rem auto;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .header .container{
+        background-color: hsl(199,100%,62%);
+        background-size: 170% 70%;
+        background-position: center bottom;
+        width: 100%;
+        min-height: 650px;
+    }
+    .header-main h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction:column-reverse;
+        width: 100%;
+    }
+
+    .row#standOut{
+        display: inline-block;
+    }
+    .col-2 .text-info{
+        height: 450px;
+        margin-top: 2rem;
+    }
+    .col-4{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* tablet size */
+
+@media only screen and (max-width: 770px) {
+    .header-main h1{
+        font-size: 40px;
+    }
+    .col-2 .text-info{
+        max-height: 270px;
+    }
+    .col-2 h2{
+        font-size: 22px !important;
+        margin: 0rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 10px !important;
+        margin: 0 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    .col-3:last-child{
+        display: none;
+    }
+    a.learn-more{
+        display: inline-block;
+        position: relative;
+        font-size: 10px !important;
+        margin: 1rem 4rem;
+    }
+    a.learn-more::before{
+        height: 7px;
+        width: 80px !important;
+        position: absolute;
+        bottom: -.15em;
+        left: -3px;
+    }
+    a.learn-more-red{
+        display: inline-block;
+        position: relative;
+        font-size: 10px !important;
+        margin: 1rem 4rem;
+    }
+    
+    a.learn-more-red::before{
+        height: 7px;
+        width: 80px !important;
+        position: absolute;
+        bottom: -.18em;
+        left: -3px;
+    }
+    .item-description{
+        position: absolute;
+        bottom: 1%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 14px !important;
+        margin: 1rem auto !important;
+    }
+    p.graphic-design{
+        max-width: 300px;
+        margin: 0 2rem !important;
+        line-height: 1.5;
+        font-size: 12px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 820px) {
+    .col-2 h2{
+        font-size: 26px;
+        margin: 1rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 12px;
+        margin: 1rem 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    
+}
+
+/* laptop size */
+
+@media only screen and (max-width: 975px) {
+    .header-main img{
+        max-height: 90px;
+    }
+    .col-2 h2{
+        font-size: 30px;
+        margin: 1rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 16px;
+        margin: 1rem 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    a.learn-more{
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        margin: 1rem 4rem;
+    }
+    a.learn-more::before{
+        height: 7px;
+        width: 90px;
+        position: absolute;
+        bottom: -.15em;
+        left: -3px;
+    }
+    a.learn-more-red{
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        margin: 1rem 4rem;
+    }
+    
+    a.learn-more-red::before{
+        height: 7px;
+        width: 90px;
+        position: absolute;
+        bottom: -.18em;
+        left: -3px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .col-2 h2{
+        font-size: 40px;
+        margin: 2rem 4rem;
+    }
+    .col-2 p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 26px;
+        margin: 2rem 4rem;
+        color: hsl(213, 9%, 39%);
+    }
+    .item-description{
+        position: absolute;
+        bottom: 3%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 28pxpx;
+    }
+    p.graphic-design{
+        max-width: 300px;
+        margin: 0.5rem auto;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .col-2 h2{
+        margin: 1rem 4rem;
+    }
+    .item-description{
+        position: absolute;
+        bottom: 3%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 16px;
+    }
+    p.graphic-design{
+        max-width: 300px;
+        margin: 0.5rem auto;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+  }
+
+@media only screen and (max-width: 1300px) {
+    .col-2 h2{
+        margin: 2rem 4rem;
+    }
+    .item-description{
+        position: absolute;
+        bottom: 5%;
+    }
+    h2.graphic-design{
+        font-family: font-family: 'Fraunces', serif;;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+  }
