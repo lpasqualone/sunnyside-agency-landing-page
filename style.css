@@ -48,7 +48,7 @@ a{
     color: #fff;
 }
 
-.hamburger-menu {
+.menu-icon {
     font-size: 24px;
     margin-top: 1rem;
     color: #fff;
@@ -346,12 +346,18 @@ footer h2{
     margin-bottom: 100px;
 }
 
-/* ------ meda queries ------ */
+/* ------ media queries ------ */
 
 
 /* mobile size */
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 380px) {
+    .col-2 h2{
+        font-size: 20px !important;
+    }
+    .col-2 p{
+        font-size: 14px !important;
+    }
 
     .client-testimonials h3{
         margin: 1rem 2rem;
@@ -360,12 +366,10 @@ footer h2{
     p.client-name{
         font-size: 14px;
         padding-bottom: 0;
-    }
-    
+    } 
     p.client-title{
         font-size: 14px;
     }
-
     footer h2{
         font-size: 20px;
     }
@@ -374,38 +378,15 @@ footer h2{
     }
 }
 
-@media only screen and (min-width: 450px) {
-    .col-2 h2{
-        font-size: 22px !important;
-        margin: 0rem 4rem;
-    }
-    .col-2 p{
-        font-family: 'Barlow', sans-serif;
-        font-size: 18px !important;
-        margin: 0 4rem;
-        color: hsl(213, 9%, 39%);
-    }
-    .item-description{
-        position: absolute;
-        bottom: 3%;
-    }
-    h2.graphic-design{
-        font-family: font-family: 'Fraunces', serif;;
-        font-size: 28px;
-    }
-    p.graphic-design{
-        max-width: 300px;
-        margin: 0.5rem auto;
-        line-height: 1.5;
-        font-size: 18px;
+@media only screen and (min-width: 600px) {
+    nav ul li:last-child{
+        display: none;
     }
 }
 
-
-
 @media only screen and (max-width: 600px) {
     
-    .hamburger-menu {
+    .menu-icon {
         font-size: 24px;
         color: #fff;
         display: inline-block;
@@ -413,7 +394,27 @@ footer h2{
         cursor: pointer;
     }
     nav ul{
-        display: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3rem;
+        border-bottom: 1px solid #fff;
+        background-image: linear-gradient(hsl(199,100%,62%), hsl(199,100%,62%));
+        top: 70px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.7s;
+    }
+    nav ul li{
+        display: block;
+
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
     }
     nav button{
         display: none;
@@ -444,17 +445,47 @@ footer h2{
         display: inline-block;
     }
     .col-2 .text-info{
-        height: 450px;
-        margin-top: 2rem;
+        max-height: 410px;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     .col-4{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
     .col-3 p{
         font-size: 16px;
         margin: 0 3rem;
+    }
+
+    a.learn-more{
+        display: inline-block;
+        position: relative;
+        font-size: 12px !important;
+    }
+    a.learn-more::before{
+        height: 7px;
+        width: 90px !important;
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+    }
+    a.learn-more-red{
+        display: inline-block;
+        position: relative;
+        font-size: 12px !important;
+    }
+    
+    a.learn-more-red::before{
+        height: 7px;
+        width: 90px !important;
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
     
 
@@ -471,14 +502,10 @@ footer h2{
         max-height: 350px;
     }
     .col-2 h2{
-        font-size: 22px !important;
-        margin: 0rem 4rem;
+        font-size: 24px !important;
     }
     .col-2 p{
-        font-family: 'Barlow', sans-serif;
-        font-size: 16px !important;
-        margin: 0 4rem;
-        color: hsl(213, 9%, 39%);
+        font-size: 17px !important;
     }
     .col-3:last-child{
         display: none;
@@ -514,23 +541,22 @@ footer h2{
         position: absolute;
         bottom: 1%;
     }
+
     h2.graphic-design{
-        font-family: font-family: 'Fraunces', serif;;
-        font-size: 14px !important;
-        margin: 1rem auto !important;
+        font-size: 16px !important ;
     }
     p.graphic-design{
-        max-width: 300px;
-        margin: 0 2rem !important;
+        width: 300px;
+        margin: 0 auto !important;
         line-height: 1.5;
-        font-size: 12px !important;
+        font-size: 12px !important ;
     }
     
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 840px) {
     .col-2 h2{
-        font-size: 26px;
+        font-size: 24px;
         margin: 1rem 4rem;
     }
     .col-2 p{
@@ -538,6 +564,15 @@ footer h2{
         font-size: 12px;
         margin: 1rem 4rem;
         color: hsl(213, 9%, 39%);
+    }
+    h2.graphic-design{
+        font-size: 16px !important ;
+    }
+    p.graphic-design{
+        width: 310px;
+        margin: 0;
+        line-height: 1.5;
+        font-size: 14px !important ;
     }
     
 }
@@ -585,6 +620,15 @@ footer h2{
         bottom: -.18em;
         left: -3px;
     }
+    h2.graphic-design{
+        font-size: 18px !important ;
+    }
+    p.graphic-design{
+        width: 310px;
+        margin: 0;
+        line-height: 1.5;
+        font-size: 14px !important ;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -604,13 +648,13 @@ footer h2{
     }
     h2.graphic-design{
         font-family: font-family: 'Fraunces', serif;;
-        font-size: 28pxpx;
+        font-size: 28px !important ;
     }
     p.graphic-design{
-        max-width: 300px;
-        margin: 0.5rem auto;
+        max-width: 500px;
+        margin: 0.5rem 1rem;
         line-height: 1.5;
-        font-size: 18px;
+        font-size: 22px !important ;
     }
 }
 
@@ -621,16 +665,6 @@ footer h2{
     .item-description{
         position: absolute;
         bottom: 3%;
-    }
-    h2.graphic-design{
-        font-family: font-family: 'Fraunces', serif;;
-        font-size: 16px;
-    }
-    p.graphic-design{
-        max-width: 300px;
-        margin: 0.5rem auto;
-        line-height: 1.5;
-        font-size: 14px;
     }
     .col-3 p{
         font-size: 16px;
@@ -646,11 +680,7 @@ footer h2{
         position: absolute;
         bottom: 5%;
     }
-    h2.graphic-design{
-        font-family: font-family: 'Fraunces', serif;;
-        font-size: 20px;
-        padding-top: 10px;
-    }
+
   }
 
   @media only screen and (min-width: 1300px){
@@ -674,8 +704,8 @@ footer h2{
     }
     p.graphic-design{
         max-width: 450px;
-        margin: 0.5rem auto;
+        margin: 0.5rem 1rem;
         line-height: 1.5;
-        font-size: 18px !important ;
+        font-size: 22px !important ;
     }
   }

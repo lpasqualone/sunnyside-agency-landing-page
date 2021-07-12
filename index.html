@@ -28,9 +28,10 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <button><a href="#">Contact</a></button>
-        <div class="hamburger-menu">
+        <div class="menu-icon" onclick="menutoggle()">
           <i class="fas fa-bars"></i>
         </div>
       </nav>
@@ -179,15 +180,18 @@
     var MenuItems = document.getElementById("MenuItems");
 
     MenuItems.style.maxHeight = "0px";
+    MenuItems.style.borderBottom = "none";
 
     function menutoggle(){
       if(MenuItems.style.maxHeight == "0px")
       {
         MenuItems.style.maxHeight = "200px";
+        MenuItems.style.borderBottom = "1px solid #fff";
       }
       else
       {
         MenuItems.style.maxHeight = "0px";
+        MenuItems.style.borderBottom = "none";
       }
     }
 
