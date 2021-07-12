@@ -374,7 +374,7 @@ footer h2{
     }
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 450px) {
     .col-2 h2{
         font-size: 22px !important;
         margin: 0rem 4rem;
@@ -410,7 +410,7 @@ footer h2{
         color: #fff;
         display: inline-block;
         margin-top: -3px;
-        cursor:pointer;
+        cursor: pointer;
     }
     nav ul{
         display: none;
@@ -452,6 +452,12 @@ footer h2{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .col-3 p{
+        font-size: 16px;
+        margin: 0 3rem;
+    }
+    
+
 }
 
 
@@ -462,7 +468,7 @@ footer h2{
         font-size: 40px;
     }
     .col-2 .text-info{
-        max-height: 290px;
+        max-height: 350px;
     }
     .col-2 h2{
         font-size: 22px !important;
@@ -470,7 +476,7 @@ footer h2{
     }
     .col-2 p{
         font-family: 'Barlow', sans-serif;
-        font-size: 12px !important;
+        font-size: 16px !important;
         margin: 0 4rem;
         color: hsl(213, 9%, 39%);
     }
@@ -626,6 +632,9 @@ footer h2{
         line-height: 1.5;
         font-size: 14px;
     }
+    .col-3 p{
+        font-size: 16px;
+    }
     
   }
 
@@ -664,7 +673,7 @@ footer h2{
         font-size: 28px !important ;
     }
     p.graphic-design{
-        max-width: 300px;
+        max-width: 450px;
         margin: 0.5rem auto;
         line-height: 1.5;
         font-size: 18px !important ;
