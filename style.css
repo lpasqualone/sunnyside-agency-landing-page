@@ -491,7 +491,12 @@ footer h2{
 
 }
 @media only screen and (min-width: 600px) and (max-width: 780px){
-    
+    .col-2 h2{
+        font-size: 20px !important;
+    }
+    .col-2 p{
+        font-size: 12px !important;
+    }
 }
 
 /* tablet size */
