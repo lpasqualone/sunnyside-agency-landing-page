@@ -490,22 +490,24 @@ footer h2{
     
 
 }
-
+@media only screen and (min-width: 600px) and (max-width: 780px){
+    
+}
 
 /* tablet size */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 780px) {
     .header-main h1{
         font-size: 40px;
     }
     .col-2 .text-info{
-        max-height: 350px;
+        max-height: 250px;
     }
     .col-2 h2{
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
     .col-2 p{
-        font-size: 17px !important;
+        font-size: 12px !important;
     }
     .col-3:last-child{
         display: none;
